@@ -5,9 +5,7 @@ import static java.lang.Math.sqrt;
 
 public class Point {
     static double distance(int x1, int y1, int x2, int y2) {
-        int deltaX = x2 - x1;
-        int deltaY = y2 - y1;
-        return sqrt(pow(deltaX, 2) + pow(deltaY, 2));
+        return sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
     }
 
     public static void main(String[] args) {
