@@ -7,7 +7,7 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 class FindLoopTest {
     @Test
     public void whenArrayHas5Then0() {
-        int[] data = new int[] {5, 10, 3};
+        int[] data = new int[]{5, 10, 3};
         int element = 5;
         int result = FindLoop.indexOf(data, element);
         int expected = 0;
@@ -16,7 +16,7 @@ class FindLoopTest {
 
     @Test
     public void whenDiapasonHas8ThenResultEqualFinish() {
-        int[] data = new int[] {5, 2, 10, 2, 4, 8, 14, 3, 21, 16};
+        int[] data = new int[]{5, 2, 10, 2, 4, 8, 14, 3, 21, 16};
         int element = 8;
         int start = 2;
         int finish = 5;
@@ -27,7 +27,7 @@ class FindLoopTest {
 
     @Test
     public void whenDiapasonHasSomeEqualElementThen3() {
-        int[] data = new int[] {5, 10, 2, 4, 8, 4, 14, 4, 3, 21, 16};
+        int[] data = new int[]{5, 10, 2, 4, 8, 4, 14, 4, 3, 21, 16};
         int element = 4;
         int start = 1;
         int finish = 8;
@@ -38,7 +38,7 @@ class FindLoopTest {
 
     @Test
     public void whenDiapasonHas2Then3() {
-        int[] data = new int[] {5, 2, 10, 2, 4};
+        int[] data = new int[]{5, 2, 10, 2, 4};
         int element = 2;
         int start = 2;
         int finish = 4;
@@ -49,7 +49,7 @@ class FindLoopTest {
 
     @Test
     public void whenDiapasonHasNot8ThenMinus1() {
-        int[] data = new int[] {5, 2, 10, 2, 4,15,19,1,6};
+        int[] data = new int[]{5, 2, 10, 2, 4, 15, 19, 1, 6};
         int element = 8;
         int start = 1;
         int finish = 4;
