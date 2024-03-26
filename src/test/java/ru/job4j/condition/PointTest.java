@@ -41,4 +41,22 @@ class PointTest {
         double output = first.distance(second);
         assertThat(output).isEqualTo(expected, withPrecision(0.01));
     }
+
+    @Test
+    void when98Minus3to765then8dot48() {
+        double expected = 8.48;
+        Point first = new Point(9, 8, -3);
+        Point second = new Point(7, 6, 5);
+        double output = first.distance3d(second);
+        assertThat(output).isEqualTo(expected, withPrecision(0.01));
+    }
+
+    @Test
+    void when321to456then5dot91() {
+        double expected = 5.91;
+        Point first = new Point(3, 2, 1);
+        Point second = new Point(4, 5, 6);
+        double output = first.distance3d(second);
+        assertThat(output).isEqualTo(expected, withPrecision(0.01));
+    }
 }
