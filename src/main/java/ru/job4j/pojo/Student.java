@@ -4,6 +4,8 @@ import java.util.Date;
 
 public class Student {
     private String name;
+    private String group;
+    private Date admissionDate;
 
     public String getName() {
         return name;
@@ -28,9 +30,4 @@ public class Student {
     public void setAdmissionDate(Date admissionDate) {
         this.admissionDate = admissionDate;
     }
-
-    private String group;
-    private Date admissionDate;
-
-
 }
