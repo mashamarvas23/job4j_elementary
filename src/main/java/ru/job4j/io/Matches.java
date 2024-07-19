@@ -12,12 +12,11 @@ public class Matches {
             String player = turn ? "Первый игрок" : "Второй игрок";
             System.out.println(player + " введите число от 1 до 3:");
             int matches = Integer.parseInt(input.nextLine());
-            turn = !turn;
             if (matches >= 1 && matches <= Math.min(3, count)) {
                 count = count - matches;
+                turn = !turn;
             } else {
                 System.out.println(player + ", Вы ввели некорректное число, либо введеное число больше остатка. Попробуйте снова:");
-                turn = !turn;
             }
         }
         if (!turn) {
